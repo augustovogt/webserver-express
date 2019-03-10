@@ -5,7 +5,7 @@ const hbs = require ('hbs');
 
 require('./views/hbs/helpers/helpers');
 
-const port = process.PORT || 3000
+const port = process.env.PORT || 3000
 
 
 app.use( express.static(__dirname + '/public'));
